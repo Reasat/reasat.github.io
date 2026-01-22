@@ -94,7 +94,6 @@ div.menu-item {
 div#toptitle {
     padding-bottom: 0.2em;
     margin-bottom: 1.5em;
-    border-bottom: 3px double gray;
 }
 
 div#toptitle + h2, div#toptitle + h3 {

@@ -3,17 +3,30 @@ layout: default
 title: Tahsin Reasat
 ---
 
-<div style="float: left; margin-right: 25px; margin-bottom: 15px;">
+<div style="float: left; margin-right: 20px; margin-bottom: 15px;">
+<table style="border: none; white-space: nowrap;">
+<tr>
+<td style="vertical-align: middle; padding-right: 10px; text-align: right; white-space: nowrap;">
+<!-- <strong>Tahsin Reasat</strong><br> -->
+Albany, CA, USA<br>
+greasat@gmail.com<br>
++1 615 714 1563<br>
+<a href="https://scholar.google.com/citations?user=8fCobOcAAAAJ&hl=en&oi=ao">Google Scholar</a><br>
+<a href="https://www.linkedin.com/in/tr42">LinkedIn</a><br>
+<a href="https://github.com/Reasat">GitHub</a><br>
+<a href="https://www.kaggle.com/reasat">Kaggle</a>
+</td>
+<td style="vertical-align: middle; text-align: left; white-space: nowrap;">
 <img src="{{ '/photos/headshot.jpg' | relative_url }}" alt="Tahsin Reasat" style="width: 200px; height: 200px; border-radius: 8px; object-fit: cover; border: 2px solid #dddddd; box-shadow: 0 2px 6px rgba(0,0,0,0.1);" />
+</td>
+</tr>
+</table>
 </div>
 
-Albany, CA, USA  
-greasat@gmail.com  
-+1 615 714 1563  
-[Google Scholar](https://scholar.google.com/citations?user=8fCobOcAAAAJ&hl=en&oi=ao) [LinkedIn](https://www.linkedin.com/in/tr42) [GitHub](https://github.com/Reasat) [Kaggle](https://www.kaggle.com/reasat)
-
-## Summary
+<h2 style="display: inline-block;">Summary</h2>
 Applied ML engineer with 8+ years of experience building and deploying production ML systems across computer vision, NLP, and speech recognition. I specialize in end-to-end ML pipelines—from data curation and model training to evaluation, deployment, and monitoring—primarily on AWS.
+
+<div style="clear: both;"></div>
 
 ## Selected impact
 - Built a human-in-the-loop fax document processing system on AWS; reduced manual processing time by 80--90% and supported 300--475 faxes/day.
