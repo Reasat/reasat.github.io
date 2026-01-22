@@ -1,48 +1,43 @@
 # jemdoc: menu{MENU}{research.html}, nofooter
-== Research 
+== Projects \& Research
 
-== Peripheral Venous Pressure Signal
-This project has been my main focus of PhD research. We are trying to correlate the fluid status of a patient with Peripheral Venous Pressure (PVP) signal. Some elementary results have shown promising results that PVP signal is able to distinguish between dehydrated and hydrated patients. We have also developed an unsupervised algorithm based on [https://en.wikipedia.org/wiki/Kalman_filter Kalman filter] and [https://en.wikipedia.org/wiki/Hidden_Markov_model hidden Markov model (HMM)] that can detect anomalous segments of PVP signal recording. Explainable deep learning models have produced some interserting results on our dataset that are withing to get published.\n
-- ``Prediction of Body Fluid Status from Peripheral Venous Pressure Signal Using CNN'' - \[*Manuscript Ready*]
-- [https://doi.org/10.1016/j.bspc.2020.102126 ``Unsupervised Anomaly Detection in Peripheral Venous Pressure Signals with Hidden Markov Models,''] /Biomedical Signal Processing and Control/, September 2020. \[[pdf/hayat2020unsupervised.pdf pdf]] \[[https://github.com/i2pt/UAD_PVPS_HMM GitHub]]
-- [https://doi.org/10.1016/j.jss.2019.01.036 ``Venous Physiology Predicts Dehydration in the Pediatric Population,''] /Journal of Surgical Research/, June 2019. \[[pdf/JSR.pdf pdf]]
-- [https://doi.org/10.1088%2F2057-1976%2Fab0ea8 ``Lessons learned measuring peripheral venous pressure waveforms in an anesthetized pediatric population,''] /Biomedical Physics & Engineering Express/, April 2019. \[[pdf/BPEE.pdf pdf]]
-- [https://www.journalacs.org/article/S1072-7515(18)31606-5/pdf ``Venous Physiology Predicts Anesthetic Induced Hypotension in Infants,''] /Journal of the American College of Surgeons/, October 2018. \[[pdf/JACS_eposter.pdf pdf]]
+This page highlights a few representative projects spanning production ML systems, Document AI, open-source benchmarks, and biomedical ML.
 
-\[[https://electrical-engineering.uark.edu/news/press-releases/ua-engineering-researchers-unite-to-save-precious-time-in-medical-emergencies.php Press Release]] \[[https://nsf.gov/awardsearch/showAward?AWD_ID=1711087 NSF]] \[[https://mahayat.github.io/pvp.html UArk-UAMS Collaboration]]
+== Production ML systems (AWS)
+=== Document AI: Fax processing (Ambry Genetics)
+- Built a Temporal-orchestrated, human-in-the-loop fax document processing system on AWS to automate splitting, classification, and patient-to-order matching; reduced manual processing time by 80--90% and supported 300--475 faxes/day.
+- Implemented Temporal worker services (background processes): heavier workers for OCR/LLM inference and lighter workers for orchestration and workflow bookkeeping.
+- OCR + extraction with AWS Textract + AWS Bedrock; workflow state persisted in Amazon Aurora PostgreSQL.
 
-== Self-supervised Learning
-During summer of 2020, I worked at [https://www.lbl.gov/ Lawrence Berkeley National Laboratory] on self-supervised learning on astronomical images. Publications are on progress.
-- ``Self-Supervised Representation Learning for Astronomical Images,'' The Astrophysical Journal Letters, December 2020. \[[https://arxiv.org/abs/2012.13083 arXiv]]
-- ``Estimating Galactic Distances From Images Using Self-supervised Representation Learning," [https://ml4physicalsciences.github.io/2020/ Machine Learning and the Physical Sciences Workshop], 34th Conference on Neural Information Processing Systems (NeurIPS),
-December, 2020. \[[https://ml4physicalsciences.github.io/2020/files/NeurIPS_ML4PS_2020_17.pdf pdf]]\[[https://ml4physicalsciences.github.io/2020/files/NeurIPS_ML4PS_2020_17_poster.pdf poster]]
+=== Document AI: Insurance denial extraction (Ambry Genetics)
+- Designed an LLM-based system to extract structured fields from insurance denial documents, enabling potential recovery of ~$3M/year in lost claims.
 
-== Rice Panicle Segmentation
-We have developed a Gaussian mixture model based unsupervised image segmentation algorithm that can segment rice panicles. The proposed method outperforms existing methods like [https://plantmethods.biomedcentral.com/articles/10.1186/s13007-017-0254-7 Panicle-SEG] with an average F1 score greater than 80%. Next objective is to come up with a self-supervised algorithm on large dataset. 
-- [https://plantmethods.biomedcentral.com/articles/10.1186/s13007-020-00567-8 ``Unsupervised Bayesian Learning for Rice Panicle Segmentation with UAV Images,''] /Plant Methods/, February 2020 \[[https://plantmethods.biomedcentral.com/track/pdf/10.1186/s13007-020-00567-8 pdf]] \[[https://github.com/i2pt/UBLRPSUI GitHub]] 
-~~~
-{}{img_left}{photos/Panicle.png}{Panicle}{}{}
-~~~
+=== Clinical genomics ML (Ambry Genetics)
+- Built ontology-aware features and trained an XGBoost model to prioritize genes; deployed to EC2 and reduced manual variant analysis workload by 50%.
+- Built an LLM-based pedigree image classifier on AWS Bedrock; 99% accuracy on an internal test dataset.
 
-== Deep Learning with Optical Coherence Tomography 
-I worked at [https://www.bell-labs.com/ Nokia Bell Labs] on Optical Coherence Tomography (OCT) image segmentation during summer of 2019. I applied deep learning techniques -  [https://arxiv.org/abs/1505.04597 U-Net] and [https://arxiv.org/abs/1608.06993 DenseNet] to solve the problem. 
-== Practical Wireless Communication Problems
-After finishing my undergraduate studies I started working as a System Engineer at [https://www.grameenphone.com/ Grameenphone], part of the Norwegian [https://www.telenor.com/ Telenor Group], is the largest telecommunications operator in Bangladesh. I solved some interesting problems related to radio access and microwave backhaul there. A simple example is illustrated here.
-~~~
-{}{img_left}{photos/SPHLW1C.jpeg}{SPHLW1}{800}{}
-~~~
+== Open-source datasets \& benchmarks (Bengali.AI)
+\[[https://www.bengali.ai/projects Full project list]]
 
-A particular cell of a BTS was suffering for low Minutes Per Drop (MPD). As a reason we found that the cell was overshooting at long distances. Which can be understood from measurement reports (MR) of TA = 21 to  31. The cell was using Kathrein 739636 antenna. This antenna has 6 degree fixed electrical downtilt. The planned mechanical uptilt was -3 degree. After changing the mechanical tilting from -3 degree to 0 degree the number MRs of TA between 21 to 31 reduced significantly yielding regular MPD. The red line indicates the moment we changed the mechanical tilting. 
-== Adaptive Beamforming with Microphone Array
-We as a team participated in the Cadence Xtensa Design Contest 2015. Our team was runner-up among total 16 submissions. The objective of the project was to implement an adaptive beamforming algorithm for a microphone array on an Xtensa processor. Every team was provided with Xtensa Software Developers Toolkit to work on.
- 
-- [https://ieeexplore.ieee.org/document/7488064 Adaptive beamforming with a Microphone Array] \[[pdf/hasan2015adaptive.pdf pdf]]
-- \[[https://community.cadence.com/cadence_blogs_8/b/can/posts/xtensa-design-contest-2015-in-india Xtensa Design Contest 2015]] \[[photos/The_Daily_Samakal_21_June_2015.jpeg News Report]] \[[pdf/ABMA.pdf Problem Statement]] \[[https://github.com/farhadmohsin/Robust-Adaptive-Beamforming GitHub]]
-== Stochastic Modeling of Wireless Network
-We used [https://en.wikipedia.org/wiki/Poisson_point_process Poisson point process (PPP)] and Hard-core poisson process (HCPP) to simulate BTS locations and evaluated various network parameters like throughput, SINR, outage probability using Monte Carlo simulation incorporating the idea of resource blocks. We used [http://www5.tu-ilmenau.de/nt/generic/paper_pdfs/D1.1.2.pdf WINNER II channel model] for path loss.
-- [https://ieeexplore.ieee.org/document/7488044 On the downlink SINR and outage probability of stochastic geometry based LTE cellular networks with multi-class services] \[[pdf/hasan2015downlink.pdf pdf]] 
--- Best paper of ``3rd Student Paper Contest 2014", IEEE ComSoc Bangladesh Chapter.
-- [https://www.researchgate.net/publication/330179640_Downlink_OFDMA_Network_Analysis_with_Stochastic_Geometry_Models Undergrad Thesis: Downlink OFDMA Network Analysis with Stochastic Geometry Models]
-== Links
-- \[[https://scholar.google.com/citations?user=ugxdQj8AAAAJ Google Scholar]] \[[https://www.researchgate.net/profile/Md_Abul_Hayat ResearchGate]] \[[https://orcid.org/0000-0002-1104-643X ORCID]] \[[https://twitter.com/mahayat_ Twitter]]
-- \[[https://www.youtube.com/watch?v=-xYlqfhMaRA EE Promo]: Can you spot me at 4s?] \[[https://sites.google.com/site/abulhayatshiblu/ Old Website]]
+=== OOD Speech (ASR)
+- First Bengali out-of-distribution speech recognition benchmark: 1100+ hours from 22,000+ contributors across 17 domains; fine-tuned GPT-based Whisper for regional Bengali ASR.
+\[[https://arxiv.org/abs/2305.09688 paper]] \[[https://www.kaggle.com/competitions/bengaliai-speech/ Kaggle]] \[[https://huggingface.co/spaces/bengaliAI/regional_bengali-asr_tugstugi_whisper-medium demo]]
+
+=== Document layout analysis (DocAI)
+- BaDLAD: 33,695 annotated Bengali document samples across six domains; trained Mask R-CNN and YOLO-based object detectors for layout analysis.
+\[[https://link.springer.com/chapter/10.1007/978-3-031-41676-7_19 paper]]
+
+=== Text normalization \& parsing
+- Abugida Unicode normalizer/parser libraries supporting 7 Indic languages; improved LLM robustness under adversarial conditions by 5--10 points across multiple metrics.
+\[[https://aclanthology.org/2024.lrec-main.1479/ paper]]
+
+== Biomedical ML (Vanderbilt University)
+=== Data-efficient self-supervised learning (Histopathology)
+- Built an active learning-based training pipeline for SimCLR; reduced labeled data requirements by 93% and training time by 62%.
+\[[https://www.sciencedirect.com/science/article/pii/S2666827024000537 paper]] \[[https://github.com/Reasat/data_efficient_cl github]]
+
+=== MRI segmentation (Soft tissue tumors)
+- Curated a musculoskeletal soft tissue tumor segmentation dataset (199 patients) and built multimodal UNet + SAM models; achieved Dice 80% (SOTA).
+\[[https://www.arxiv.org/abs/2409.03110 paper]] \[[https://github.com/Reasat/mstt/ github]]
+
+

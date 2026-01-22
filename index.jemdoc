@@ -1,76 +1,59 @@
 # jemdoc: menu{MENU}{index.html}, nofooter
-== Md Abul Hayat 
+== Tahsin Reasat
 
-~~~
-{}{img_left}{photos/CF.jpg}{My_Photo}{145}{170}
+Albany, CA, USA \n
+greasat@gmail.com \n
++1 615 714 1563 \n
+\[[https://scholar.google.com/citations?user=8fCobOcAAAAJ&hl=en&oi=ao Google Scholar]] \[[https://www.linkedin.com/in/tr42 LinkedIn]] \[[https://github.com/Reasat GitHub]] \[[https://www.kaggle.com/reasat Kaggle]]
 
-[https://mahayat.github.io/ Md Abul Hayat] \n
-abulhayatshiblu \[at\] gmail \[dot\] com \n
+== Summary
+Applied ML engineer with 8+ years of experience building and deploying production ML systems across computer vision, NLP, and speech recognition. I specialize in end-to-end ML pipelines—from data curation and model training to evaluation, deployment, and monitoring—primarily on AWS.
 
-\[[https://github.com/mahayat GitHub]] \[[https://scholar.google.com/citations?user=ugxdQj8AAAAJ Google Scholar]] \[[https://www.linkedin.com/in/mahayat/ LinkedIn]]
-~~~
+== Selected impact
+- Built a human-in-the-loop fax document processing system on AWS; reduced manual processing time by 80--90% and supported 300--475 faxes/day.
+- Built an LLM-based system to extract structured data from insurance denial documents; enabled recovery of ~$3M/year in lost claims.
+- Built an ontology-aware gene prioritization model (XGBoost) and deployed it to EC2; reduced manual variant analysis workload by 50%.
+- Led open-source research initiatives via Kaggle competitions (Bengali.AI), including Kaggle grants totaling $200k.
 
 == Experience
-- [https://en.wikipedia.org/wiki/JPMorgan_Chase JPMorgan Chase & Co.], /Brooklyn, NY/ \n
-Quantitative Modeling Sr. Associate (MRGR) (July 2023 - Present) \n
-- [https://en.wikipedia.org/wiki/Amazon_(company) Amazon.com, Inc], /Seattle, WA/ \n
-Applied Scientist Intern ([https://aws.amazon.com/lookout-for-metrics/ AWS]) (May 2021 - August 2021) \n
-# Mentor: [https://www.linkedin.com/in/ketan-vijayvargiya/ Ketan Vijayvargiya]
-- [https://www.lbl.gov/ Lawrence Berkeley National Laboratory], /Berkeley, CA/ \n
-[https://hr.lbl.gov/service/appointments/affiliates/ Affiliate] (August 2020 - September 2021)\n
-Summer Intern ([https://www.nersc.gov/ NERSC]) (May 2020 - August 2020)\n
-Mentor: [https://www.linkedin.com/in/mumustafa Mustafa Mustafa]
-- [https://www.bell-labs.com/ Nokia Bell Labs], /Murray Hill, NJ/ \n
-Summer Intern (Math & Algorithms) (June 2019 - August 2019)\n
-# Mentor: [https://www.linkedin.com/in/atefehmohajeri/ Atefeh Mohajeri] \n
-- [https://www.uark.edu/ University of Arkansas], /Fayetteville, AR/ \n
-Graduate Assistant, [https://electrical-engineering.uark.edu/ Electrical Engineering] (August 2017 - July 2023)
-- [https://www.grameenphone.com/ Grameenphone], /Dhaka, Bangladesh/ \n
-System Engineer (O&M), Technology Division (October 2015 - August 2017)
+=== Ambry Genetics (AI Engineer, Remote) — 2025–Present
+Built AI-driven solutions to enhance operational efficiency and extract insights from biomedical and business data.
+- Human-in-the-loop Document AI (Fax)
+-- Built a human-in-the-loop fax document processing system to automate document splitting, classification, and patient-to-order matching; reduced manual processing time by 80--90% and supported 300--475 faxes/day.
+-- Designed Temporal workflow logic (state machine, routing, retries/fallbacks, and human review paths) and implemented Temporal worker services (background processes) for orchestration and AI inference.
+-- Implemented OCR and LLM pipelines using AWS Textract and AWS Bedrock; persisted document metadata and workflow state in Amazon Aurora PostgreSQL.
+-- Built reviewer-facing UIs and a Streamlit dashboard for throughput and model performance reporting on an internal test dataset.
+- Insurance Denial Extraction
+-- Designed and implemented an LLM-based system to extract structured data from insurance denial documents, enabling recovery of approximately $3M annually in lost claims.
+- Clinical Genomics ML
+-- Developed ontology-aware features for a graph data structure and built an XGBoost model to prioritize genes; deployed to an EC2 instance and reduced manual variant analysis workload by 50%.
+-- Built an LLM-based pedigree image classifier on AWS Bedrock, achieving 99% accuracy on an internal test dataset.
 
-== Education
+=== Bengali.AI (Co-founder) — 2017–Present
+Bengali.AI builds open-source resources—datasets, libraries, and models—for ASR, CV, and NLP, released through Kaggle competitions to democratize AI. \[[https://www.bengali.ai/projects Full project list]]
+- Engineered normalizer and parser libraries for Abugida Unicode texts supporting 7 Indic languages; improved LLM robustness under adversarial conditions by 5--10 points across multiple metrics. \[[https://aclanthology.org/2024.lrec-main.1479/ paper]]
+- Led creation of a Bengali OOD speech recognition benchmark: 1100+ hours from 22,000+ contributors across 17 domains; fine-tuned GPT-based Whisper for regional Bengali ASR. \[[https://arxiv.org/abs/2305.09688 paper]] \[[https://www.kaggle.com/competitions/bengaliai-speech/ Kaggle]] \[[https://huggingface.co/spaces/bengaliAI/regional_bengali-asr_tugstugi_whisper-medium demo]]
+- Developed a Bengali document layout analysis dataset (BaDLAD) with 33,695 annotated samples across six domains; fine-tuned Mask R-CNN and YOLO-based object detection models. \[[https://link.springer.com/chapter/10.1007/978-3-031-41676-7_19 paper]]
 
-- [https://www.uark.edu/ University of Arkansas], /Fayetteville, AR/ \n PhD, [https://electrical-engineering.uark.edu/ Electrical Engineering] (August 2017 - July 2023) \n Supervisor: [https://wuj.hosted.uark.edu Jingxian Wu] 
-- [https://www.uark.edu/ University of Arkansas], /Fayetteville, AR/ \n MS, [https://statistics-analytics.uark.edu/index.php Statistics] (August 2017 - May 2021) \n Advisor: [https://fulbright.uark.edu/departments/math/directory/index/uid/gpetris/name/Giovanni+Petris/ Giovanni Petris]
-- [https://www.buet.ac.bd/web/ Bangladesh University of Engineering & Technology], /Dhaka, Bangladesh/ \n BSc, [http://eee.buet.ac.bd/ Electrical & Electronic Engineering] (May 2010 - September 2015) \n 
-[https://www.researchgate.net/profile/Md_Abul_Hayat/publication/330179640_Downlink_OFDMA_Network_Analysis_with_Stochastic_Geometry_Models/links/5c314d32a6fdccd6b5962e9b/Downlink-OFDMA-Network-Analysis-with-Stochastic-Geometry-Models.pdf Thesis] Supervisor: [https://mfarhadhossain.buet.ac.bd/ Md Farhad Hossain]
+=== Vanderbilt University (Graduate Research Assistant, ECE) — 2018–2024
+- Built an active learning-based training pipeline for SimCLR on histopathology images; reduced data requirements by 93% and training time by 62%. \[[https://www.sciencedirect.com/science/article/pii/S2666827024000537 paper]] \[[https://github.com/Reasat/data_efficient_cl github]]
+- Curated an MRI soft tissue tumor segmentation dataset (199 patients) and developed multimodal UNet + Segment Anything Model (SAM) approaches; achieved Dice 80% (state of the art). \[[https://www.arxiv.org/abs/2409.03110 paper]] \[[https://github.com/Reasat/mstt/ github]]
 
-== Research Projects
+=== Bangladesh University of Engineering and Technology (Graduate Research Assistant, EE) — 2016–2018
+- Engineered a CNN for inferior myocardial infarction detection from ECG signals; accuracy 84.54% (state of the art at time). \[[https://ieeexplore.ieee.org/abstract/document/8289058/ paper]] \[[https://github.com/Reasat/cnn-imi github]]
 
-- Current Research
--- Predicting Cardiac Age from ECG and Arterial Blood Pressure (ABP) Signals 
---- Work in Progress
+== Technical skills
+- ML: PyTorch, TensorFlow, Keras, Transformers, PEFT/LoRA, scikit-learn, XGBoost
+- Cloud \& MLOps: AWS (Bedrock, EC2, S3, Textract, Aurora PostgreSQL), Temporal, Docker, distributed GPU training, Jira
+- Backend/Data: Python, SQL, FastAPI, Flask, Pandas, NumPy, OpenCV, Streamlit
 
-- PhD Research
--- PhD Dissertation
---- \[[https://scholarworks.uark.edu/etd/4890/ dissertation]] \[[pdfs/phd_dissertation_presentation.pdf slides1]] \[[pdfs/dissertation_proposal_presentation.pdf slides2]]
--- IPFM-based Modeling of Peripheral Blood Pressure Signals
---- \[[pdfs/MPAVPSwIPFM.pdf paper]] \[[https://github.com/i2pt/MPAVPSwIPFM github]]
--- Self-supervised Learning for Astronomical Images
---- \[[https://iopscience.iop.org/article/10.3847/2041-8213/abf2c7 paper]] \[[https://arxiv.org/abs/2012.13083 arxiv]] \[[https://github.com/mahayat/ssl-sky-surveys github]] \[[https://portal.nersc.gov/project/dasrepo/self-supervised-learning-sdss/ website]] \[[https://www.youtube.com/watch?v=LD4Zs8OCrOE youtube]] \[[pdfs/SSL_astro.pdf ppt]] \[[https://cs.lbl.gov/news-media/news/2021/self-supervised-machine-learning-adds-depth-breadth-and-speed-to-sky-surveys/ media]]
---- \[[https://ml4physicalsciences.github.io/2020/files/NeurIPS_ML4PS_2020_17.pdf paper]] \[[https://arxiv.org/abs/2101.04293 arxiv]] \[[https://ml4physicalsciences.github.io/2020/files/NeurIPS_ML4PS_2020_17_poster.pdf poster]]
--- Unsupervised Bayesian Learning for Rice Panicle Segmentation from Drone Images
---- \[[https://plantmethods.biomedcentral.com/counter/pdfs/10.1186/s13007-020-00567-8.pdf paper]] \[[https://github.com/i2pt/UBLRPSUI github]] \[[https://fulbright.uark.edu/departments/math/_resources/images/research/sls/SLS2019-mahayat_asls.jpg poster]]
--- Anomaly Detection in PVP Signals with Hidden Markov Model
---- \[[https://mahayat.github.io/pdfs/hayat2020unsupervised.pdf paper]] \[[https://github.com/i2pt/UAD_PVPS_HMM github]]
--- Predicting Dehydration from Human PVP Signals
---- \[[https://mahayat.github.io/pdfs/JSR.pdf paper]] \[[https://mahayat.github.io/pdfs/BPEE.pdf paper]] \[[pvp.html full list]]
-- Undergrad Research
--- Downlink OFDMA Network Analysis with Stochastic Geometry Models
---- \[[https://ieeexplore.ieee.org/abstract/document/7488044 paper]] \[[https://www.researchgate.net/profile/Md-Abul-Hayat/publication/330179640_Downlink_OFDMA_Network_Analysis_with_Stochastic_Geometry_Models/links/5c314d32a6fdccd6b5962e9b/Downlink-OFDMA-Network-Analysis-with-Stochastic-Geometry-Models.pdf thesis]]
--- Adaptive Beamforming with Microphone Array
---- \[[https://ieeexplore.ieee.org/abstract/document/7488064 paper]] \[[https://github.com/farhadmohsin/Robust-Adaptive-Beamforming github]] 
---- \[[https://mahayat.github.io/pdfs/ABMA.pdf problem]] \[[https://community.cadence.com/cadence_blogs_8/b/can/posts/xtensa-design-contest-2015-in-india media]] \[[https://mahayat.github.io/photos/The_Daily_Samakal_21_June_2015.jpeg media]] \[[https://smhasan941865119.files.wordpress.com/2020/07/0.pdf certificate]]  
+== Grants and awards
+- Winner of multiple Kaggle research grants (2019, 2023) for hosting research code competitions, totaling $200k. \[[https://www.kaggle.com/organizations/BengaliAI/competitions competition examples]]
+- Winner of the Kaggle Community Competition Creator Prize (July 2022; $5k).
 
+== Selected publications
+- Data Efficient Contrastive Learning in Histopathology using Active Sampling. Machine Learning with Applications, 2024. \[[https://www.sciencedirect.com/science/article/pii/S2666827024000537 link]]
+- Detection of Inferior Myocardial Infarction using Shallow Convolutional Neural Networks. IEEE R10-HTC, 2017. \[[https://ieeexplore.ieee.org/document/8289058 link]]
+- Abugida Normalizer and Parser for Unicode Texts. LREC-COLING, 2024. \[[https://aclanthology.org/2024.lrec-main.1479/ link]]
 
-== Research Interest 
-Data Science, Deep Learning, Bayesian Statistics, Mathematical Finance, Digital Signal Processing
-
-== Teaching
-Circuits I: \[[Su23.html Su23]] \[[Sp23.html Sp23]] \n
-Systems and Signals: \[[Fa22.html Fa22]] \[[Fa21.html  Fa21]] \[[Fa20.html  Fa20]]  \[[Fa19.html  Fa19]] \n
-Electronics I: \[[Sp20.html  Sp20]]
-
-== Misc.
-\[[name.html FAQ : My Name]] \[[https://www.mathgenealogy.org/id.php?id=301228 Academic Ancestors]]
 
