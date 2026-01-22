@@ -1,7 +1,6 @@
 ---
 layout: default
 title: Projects & Research
-no_footer: true
 ---
 
 This page highlights a few representative projects spanning production ML systems, Document AI, open-source benchmarks, and biomedical ML.

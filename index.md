@@ -1,7 +1,6 @@
 ---
 layout: default
 title: Tahsin Reasat
-no_footer: true
 ---
 
 <div style="float: left; margin-right: 25px; margin-bottom: 15px;">

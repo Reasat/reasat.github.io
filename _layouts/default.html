@@ -25,6 +25,10 @@
                 <div id="footer">
                     <div id="footer-text">
                         Page generated {{ site.time | date: "%Y-%m-%d" }}, by <a href="https://jekyllrb.com/">Jekyll</a>.
+                        {% if page.url == '/' or page.url == '/index.html' %}
+                        <br>
+                        GitHub Pages forked from <a href="https://mahayat.github.io/">mahayat.github.io</a>.
+                        {% endif %}
                     </div>
                 </div>
                 {% endunless %}
