@@ -1,0 +1,39 @@
+# Site settings
+title: Tahsin Reasat
+email: greasat@gmail.com
+description: Applied ML engineer with 8+ years of experience building and deploying production ML systems
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://reasat.github.io" # the base hostname & protocol for your site
+
+# Build settings
+markdown: kramdown
+# plugins:
+#   - jekyll-feed
+#   - jekyll-sitemap
+
+# Theme settings (using custom layout, no theme)
+theme: null
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  # Note: Don't exclude _layouts/*.html or _includes/*.html
+
+# Navigation
+navigation:
+  - title: Home
+    url: /index.html
+  - title: Projects & Research
+    url: /research.html
+  - title: Publications
+    url: /publications.html
+  - title: Resume
+    url: /resume.html
+  - title: Bengali.AI
+    url: /bengali-ai.html

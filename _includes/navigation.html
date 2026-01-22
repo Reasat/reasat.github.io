@@ -1,0 +1,7 @@
+{% for item in site.navigation %}
+<div class="menu-item">
+    <a href="{{ item.url | relative_url }}" {% if page.url == item.url %}class="current"{% endif %}>
+        {{ item.title }}
+    </a>
+</div>
+{% endfor %}
