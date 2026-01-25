@@ -3,14 +3,10 @@ layout: default
 title: Tahsin Reasat
 ---
 
-<table style="border: none; width: 100%; margin-bottom: 20px;">
+<table style="border: none; width: 40%; margin-bottom: 20px;">
 <tr>
-<td style="vertical-align: top; padding-right: 20px; text-align: center; white-space: nowrap;">
+<td style="vertical-align: top; text-align: left; white-space: nowrap;">
 <img src="{{ '/photos/headshot.jpg' | relative_url }}" alt="Tahsin Reasat" style="width: 200px; height: 200px; border-radius: 8px; object-fit: cover; border: 2px solid #dddddd; box-shadow: 0 2px 6px rgba(0,0,0,0.1);" />
-</td>
-<td style="vertical-align: top; padding-right: 20px;">
-<h2 style="display: inline-block;">Summary</h2>
-Applied ML engineer with 8+ years of experience building and deploying production ML systems across computer vision, NLP, and speech recognition. I specialize in end-to-end ML pipelines-from data curation and model training to evaluation, deployment, and monitoring-primarily on AWS.
 </td>
 <td style="vertical-align: top; text-align: left; white-space: nowrap;">
 Albany, CA, USA<br>
@@ -23,6 +19,10 @@ greasat@gmail.com<br>
 </td>
 </tr>
 </table>
+
+## Summary
+
+Applied ML engineer with 8+ years of experience building and deploying production ML systems across computer vision, NLP, and speech recognition. I specialize in end-to-end ML pipelines-from data curation and model training to evaluation, deployment, and monitoring-primarily on AWS.
 
 ## Selected impact
 - Built a human-in-the-loop fax document processing system on AWS; reduced manual processing time by 80-90% and supported 300-475 faxes/day.
