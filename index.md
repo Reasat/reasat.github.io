@@ -3,22 +3,20 @@ layout: default
 title: Tahsin Reasat
 ---
 
-<table style="border: none; width: 40%; margin-bottom: 20px;">
-<tr>
-<td style="vertical-align: top; text-align: left; white-space: nowrap;">
-<img src="{{ '/photos/headshot.jpg' | relative_url }}" alt="Tahsin Reasat" style="width: 200px; height: 200px; border-radius: 8px; object-fit: cover; border: 2px solid #dddddd; box-shadow: 0 2px 6px rgba(0,0,0,0.1);" />
-</td>
-<td style="vertical-align: top; text-align: left; white-space: nowrap;">
-Albany, CA, USA<br>
-greasat@gmail.com<br>
-+1 615 714 1563<br>
-<a href="https://scholar.google.com/citations?user=8fCobOcAAAAJ&hl=en&oi=ao">Google Scholar</a><br>
-<a href="https://www.linkedin.com/in/tr42">LinkedIn</a><br>
-<a href="https://github.com/Reasat">GitHub</a><br>
-<a href="https://www.kaggle.com/reasat">Kaggle</a>
-</td>
-</tr>
-</table>
+<div class="profile-container">
+  <div class="profile-image">
+    <img src="{{ '/photos/headshot.jpg' | relative_url }}" alt="Tahsin Reasat" />
+  </div>
+  <div class="profile-info">
+    Albany, CA, USA<br>
+    greasat@gmail.com<br>
+    +1 615 714 1563<br>
+    <a href="https://scholar.google.com/citations?user=8fCobOcAAAAJ&hl=en&oi=ao">Google Scholar</a><br>
+    <a href="https://www.linkedin.com/in/tr42">LinkedIn</a><br>
+    <a href="https://github.com/Reasat">GitHub</a><br>
+    <a href="https://www.kaggle.com/reasat">Kaggle</a>
+  </div>
+</div>
 
 ## Summary
 
@@ -56,6 +54,13 @@ Bengali.AI builds open-source resources-datasets, libraries, and models-for ASR,
 
 ### Bangladesh University of Eng and Tech (Graduate Research Assistant, EE) - 2016-2018
 - Engineered a CNN for inferior myocardial infarction detection from ECG signals; accuracy 84.54% (state of the art at time). [paper](https://ieeexplore.ieee.org/abstract/document/8289058/) [github](https://github.com/Reasat/cnn-imi)
+
+## Education
+### Vanderbilt University
+Ph.D. in Electrical and Computer Engineering
+
+### Bangladesh University of Eng and Tech
+B.S. and M.S. in Electrical Engineering
 
 ## Technical skills
 - **ML**: PyTorch, TensorFlow, Keras, Transformers, PEFT/LoRA, scikit-learn, XGBoost
