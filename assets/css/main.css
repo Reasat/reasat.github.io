@@ -259,6 +259,57 @@ img {
     line-height: 1.6;
 }
 
+/* Homepage highlight cards */
+.highlights-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 12px;
+    margin: 10px 0 18px 0;
+}
+
+.highlight-card {
+    border: 1px solid #dddddd;
+    background: #fbfbfb;
+    border-radius: 8px;
+    padding: 10px 12px;
+}
+
+.highlight-metric {
+    font-weight: bold;
+    font-size: 120%;
+    color: #222222;
+    line-height: 1.1;
+}
+
+.highlight-label {
+    margin-top: 6px;
+    color: #444444;
+    font-size: 95%;
+    line-height: 1.25;
+}
+
+/* Resume PDF embed */
+.pdf-embed {
+    margin-top: 12px;
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+    overflow: hidden;
+    background: #ffffff;
+}
+
+.pdf-embed iframe {
+    width: 100%;
+    height: 900px;
+    border: 0;
+}
+
+.pdf-embed object {
+    width: 100%;
+    height: 900px;
+    border: 0;
+    display: block;
+}
+
 /* Responsive design for mobile devices */
 @media screen and (max-width: 768px) {
     table#tlayout {
@@ -306,6 +357,18 @@ img {
     
     .profile-info {
         text-align: center;
+    }
+
+    .highlights-grid {
+        grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    }
+
+    .pdf-embed iframe {
+        height: 70vh;
+    }
+
+    .pdf-embed object {
+        height: 70vh;
     }
     
     /* Make old table-based profile responsive (backward compatibility) */
