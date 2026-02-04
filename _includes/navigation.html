@@ -1,6 +1,10 @@
 {% for item in site.navigation %}
 <div class="menu-item">
-    <a href="{{ item.url | relative_url }}" {% if page.url == item.url %}class="current"{% endif %}>
+    <a
+        href="{% if item.url contains '://' %}{{ item.url }}{% else %}{{ item.url | relative_url }}{% endif %}"
+        {% if page.url == item.url %}class="current"{% endif %}
+        {% if item.url contains '://' %}target="_blank" rel="noopener noreferrer"{% endif %}
+    >
         {{ item.title }}
     </a>
 </div>

@@ -37,7 +37,7 @@ This page highlights a few representative projects spanning production ML system
 ### Text normalization & parsing
 - Engineered normalizer and parser libraries for Abugida Unicode texts supporting 7 Indic languages
 - Improved LLM robustness under adversarial conditions by 5--10 points across multiple metrics.
-- [paper] (https://aclanthology.org/2024.lrec-main.1479/)
+- [paper](https://aclanthology.org/2024.lrec-main.1479/)
 
 ## Biomedical ML (Vanderbilt University)
 ### Histopathology: Active learning for contrastive learning {#histopath-active-learning}
